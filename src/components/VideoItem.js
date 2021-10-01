@@ -1,13 +1,19 @@
 import './VideoItem.css';
 import React from 'react';
 
-const VideoItem = ({ video, onVideoSelect }) => {
+const VideoItem = ({ video, onVideoSelect, selectedVideo }) => {
   return (
     <div
       className="video-item item"
       onClick={() => onVideoSelect(video)}
       role="link"
-      aria-label="{video.snippet.title}"
+      aria-label={video.snippet.title}
+      aria-current={
+        selectedVideo && video.id.videoId === selectedVideo.id.videoId
+          ? 'true'
+          : 'false'
+      }
+      tabIndex="0"
     >
       <img
         className="ui image"
