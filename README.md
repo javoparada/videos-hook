@@ -1,5 +1,5 @@
-# YouTube video search webapp
+# YouTube video search React webapp
 
-This project was done with React with hoooks. Next step: Redux! 💪
+This project is a Youtube Search app, that was entirely done with React with hoooks.
 
-Live preview: https://videos-hook-jparada.vercel.app/
+Production deployment: https://videos-hook-jparada.vercel.app/
